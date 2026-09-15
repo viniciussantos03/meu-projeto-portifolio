@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor-principal: #094D92;
+    --cor-destaque: #F9DC5C;
+    --cor-secundaria: #89043D;
+    --cor-fundo-1: #F4F5F0;
+    --cor-hover: #D0D0DA;
+    --cor-fundo: #fff;
+
+    --font-titulos: "Poppins", sans-serif;
+    --font-textos: "Inter", sans-serif;
+}
+
+body {
+    font-family: var(--font-textos);
+    background-color: var(--cor-fundo);
+}
+
+.esconder {
+    display: none;
+}
+
+#cabecalho {
+    background-color: var(--cor-principal);
+    padding: 30px;
+}
+
+#cabecalho span {
+    display: block;
+    text-align: center;
+    margin: auto;
+    color: var(--cor-fundo-1);
+    width: 55px;
+    padding: 8px;
+}
+
+#cabecalho span:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: var(--cor-hover);
+    transition: .2s;
+}
+
+#cabecalho nav {
+    display: none;
+    margin-top: 5px;
+}
+
+#cabecalho nav.abrir {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 30px;
+}
+
+#cabecalho nav a {
+    text-decoration: none;
+    color: var(--cor-destaque);
+    font-size: 1.2em;
+    padding: 8px 10px;
+}
+
+#cabecalho nav a:hover {
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+    transition: .2s;
+}
+
+#section-apresentacao {
+    background-color: var(--cor-fundo-1);
+    padding: 10px;
+    margin-top: 20px;
+}
+
+#apresentacao img {
+    display: block;
+    width: 300px;
+    margin: 20px auto;
+}
+
+#apresentacao p {
+    padding: 0px 20px;
+    font-size: 1.1em;
+    line-height: 1.8em;
+}
