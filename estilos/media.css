@@ -1,0 +1,35 @@
+/* Tablet */
+
+@media (min-width: 576px) and (max-width: 767px) {
+    #cabecalho nav {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+
+    #cabecalho nav a {
+        display: block;
+        padding: 5px 10px 1px 10px;
+    }
+
+    #cabecalho #menu-hamburguinho {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #cabecalho nav {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+    }
+
+    #cabecalho nav a {
+        display: block;
+        padding: 5px 10px 1px 10px;
+    }
+
+    #cabecalho #menu-hamburguinho {
+        display: none;
+    }
+}

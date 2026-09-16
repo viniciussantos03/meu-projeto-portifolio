@@ -10,3 +10,13 @@ hamburguinho.addEventListener('click', () => {
 function clicou(menu) {
     menu.classList.toggle('abrir')
 }
+
+const mediaQuery = window.matchMedia('(min-width: 576px)')
+
+function verificarTela(e) {
+    if (e.matches) {
+        menu.classList.remove('abrir')
+    }
+}
+
+mediaQuery.addEventListener('change', verificarTela) 

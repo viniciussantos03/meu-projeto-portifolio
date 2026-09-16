@@ -13,9 +13,10 @@
     --cor-principal: #094D92;
     --cor-destaque: #F9DC5C;
     --cor-secundaria: #89043D;
-    --cor-fundo-1: #F4F5F0;
-    --cor-hover: #D0D0DA;
     --cor-fundo: #fff;
+    --cor-fundo-1: #F4F5F0;
+    --cor-fundo-2: #F2F0EB;
+    --cor-hover: #D0D0DA;
 
     --font-titulos: "Poppins", sans-serif;
     --font-textos: "Inter", sans-serif;
@@ -23,11 +24,7 @@
 
 body {
     font-family: var(--font-textos);
-    background-color: var(--cor-fundo);
-}
-
-.esconder {
-    display: none;
+    background-color: var(--cor-fundo-1);
 }
 
 #cabecalho {
@@ -67,7 +64,7 @@ body {
     text-decoration: none;
     color: var(--cor-destaque);
     font-size: 1.2em;
-    padding: 8px 10px;
+    padding: 5px 10px;
 }
 
 #cabecalho nav a:hover {
@@ -76,10 +73,18 @@ body {
     transition: .2s;
 }
 
-#section-apresentacao {
-    background-color: var(--cor-fundo-1);
+#section-apresentacao, 
+#section-conheca,
+#section-projetos {
+    background-color: var(--cor-fundo-2);
     padding: 10px;
     margin-top: 20px;
+}
+
+#section-apresentacao h1 {
+    font-family: var(--font-titulos);
+    text-align: center;
+    color: var(--cor-principal);
 }
 
 #apresentacao img {
@@ -92,4 +97,62 @@ body {
     padding: 0px 20px;
     font-size: 1.1em;
     line-height: 1.8em;
+}
+
+.conheca-me {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    max-width: 560px;
+    margin: auto;
+}
+
+.conheca-me iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+} 
+
+#section-projetos h2 {
+    font-family: var(--font-titulos);
+    color: var(--cor-principal);
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.projetos {
+    padding: 20px;
+    margin: 20px auto;
+    background-color: var(--cor-fundo-1);
+    border: 2px solid var(--cor-secundaria);
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.projetos:hover {
+    transform: translateY(-5px);
+}
+
+.projetos h3 {
+    text-align: center;
+    font-family: var(--font-titulos);
+    color: var(--cor-secundaria);
+    font-size: 1.4em;
+    padding-bottom: 10px;
+}
+
+.projetos img {
+    display: block;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.projetos p {
+    line-height: 1.8em;
+    padding-top: 10px;
+}
+
+summary {
+    cursor: pointer;
+    padding-top: 5px;
 }
