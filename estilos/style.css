@@ -89,7 +89,7 @@ body {
 
 #apresentacao img {
     display: block;
-    width: 300px;
+    max-width: 300px;
     margin: 20px auto;
 }
 
@@ -125,7 +125,7 @@ body {
     margin: 20px auto;
     background-color: var(--cor-fundo-1);
     border: 2px solid var(--cor-secundaria);
-    border-radius: 10px;
+    border-radius: 20px;
     transition: .5s;
 }
 
