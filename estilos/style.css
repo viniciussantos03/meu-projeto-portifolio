@@ -99,10 +99,17 @@ body {
     line-height: 1.8em;
 }
 
+#section-conheca h2 {
+    font-family: var(--font-titulos);
+    text-align: center;
+    color: var(--cor-principal);
+    font-size: 1.8em;
+    padding-bottom: 20px;
+}
+
 .conheca-me {
     width: 100%;
     aspect-ratio: 16 / 9;
-    max-width: 560px;
     margin: auto;
 }
 
@@ -124,7 +131,7 @@ body {
     padding: 20px;
     margin: 20px auto;
     background-color: var(--cor-fundo-1);
-    border: 2px solid var(--cor-secundaria);
+    border: 1px solid var(--cor-secundaria);
     border-radius: 20px;
     transition: .5s;
 }
@@ -144,7 +151,7 @@ body {
 .projetos img {
     display: block;
     margin: auto;
-    border-radius: 10px;
+    border-radius: 20px;
     max-width: 100%;
 }
 
@@ -154,6 +161,17 @@ body {
 }
 
 summary {
+    text-align: center;
     cursor: pointer;
     padding-top: 5px;
+    transition: .5s;
+    padding: 5px 15px;
+    list-style: none;
+    white-space: nowrap;
+}
+
+summary:hover {
+    background-color: var(--cor-secundaria);
+    border-radius: 10px;
+    color: var(--cor-fundo-2);
 }
