@@ -75,10 +75,12 @@ body {
 
 #section-apresentacao, 
 #section-conheca,
-#section-projetos {
+#section-projetos,
+#section-skills {
     background-color: var(--cor-fundo-2);
     padding: 10px;
-    margin-top: 20px;
+    margin: 20px 10px 0px 10px;
+    border-radius: 20px;
 }
 
 #section-apresentacao h1 {
@@ -120,7 +122,7 @@ body {
     border-radius: 10px;
 } 
 
-#section-projetos h2 {
+#section-projetos h2, #section-skills h2 {
     font-family: var(--font-titulos);
     color: var(--cor-principal);
     font-size: 1.8em;
@@ -140,7 +142,7 @@ body {
     transform: translateY(-5px);
 }
 
-.projetos h3 {
+.projetos h3, #section-skills h3 {
     text-align: center;
     font-family: var(--font-titulos);
     color: var(--cor-secundaria);
@@ -174,4 +176,35 @@ summary:hover {
     background-color: var(--cor-secundaria);
     border-radius: 10px;
     color: var(--cor-fundo-2);
+}
+
+#section-skills h3 {
+    text-align: left;
+}
+
+.skill {
+    padding: 20px;
+    margin: 20px 0px;
+    background-color: var(--cor-fundo-1);
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.skill svg {
+    color: var(--cor-secundaria);
+    margin: auto 0px;
+}
+
+.skill p {
+    line-height: 1.8em;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+}
+
+.skills-flex {
+    display: flex;
+    gap: 20px;
 }
