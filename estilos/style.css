@@ -27,6 +27,12 @@ body {
     background-color: var(--cor-fundo-1);
 }
 
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
 #cabecalho {
     background-color: var(--cor-principal);
     padding: 30px;
@@ -76,7 +82,8 @@ body {
 #section-apresentacao, 
 #section-conheca,
 #section-projetos,
-#section-skills {
+#section-skills,
+#section-cursos {
     background-color: var(--cor-fundo-2);
     padding: 10px;
     margin: 20px 10px 0px 10px;
@@ -122,14 +129,17 @@ body {
     border-radius: 10px;
 } 
 
-#section-projetos h2, #section-skills h2 {
+#section-projetos h2, 
+#section-skills h2,
+#section-cursos h2 {
     font-family: var(--font-titulos);
     color: var(--cor-principal);
     font-size: 1.8em;
     text-align: center;
 }
 
-.projetos {
+.projetos,
+.curso {
     padding: 20px;
     margin: 20px auto;
     background-color: var(--cor-fundo-1);
@@ -142,7 +152,9 @@ body {
     transform: translateY(-5px);
 }
 
-.projetos h3, #section-skills h3 {
+.projetos h3, 
+.skill h3,
+.curso h3 {
     text-align: center;
     font-family: var(--font-titulos);
     color: var(--cor-secundaria);
@@ -178,6 +190,11 @@ summary:hover {
     color: var(--cor-fundo-2);
 }
 
+#section-skills h2,
+#section-cursos h2 {
+    margin-bottom: 20px;
+}
+
 #section-skills h3 {
     text-align: left;
 }
@@ -191,6 +208,10 @@ summary:hover {
     transition: .5s;
 }
 
+.skill:hover {
+    transform: translateY(-5px);
+}
+
 .skill svg {
     color: var(--cor-secundaria);
     margin: auto 0px;
@@ -200,11 +221,35 @@ summary:hover {
     line-height: 1.8em;
 }
 
-.skill:hover {
-    transform: translateY(-5px);
-}
-
 .skills-flex {
     display: flex;
     gap: 20px;
+}
+
+.curso img {
+    display: block;
+    max-height: 300px;
+    margin: auto;
+    border-radius: 20px;
+}
+
+.curso p {
+    margin: auto;
+    margin: 20px 0px;
+}
+
+.curso a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor-principal);
+    padding: 2px 5px;
+}
+
+.curso a:hover {
+    background-color: var(--cor-destaque);
+    border-radius: 8px;
+}
+
+.curso:hover {
+    transform: translateY(-5px);
 }
