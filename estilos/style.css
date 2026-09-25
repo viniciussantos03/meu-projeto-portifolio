@@ -231,7 +231,7 @@ summary:hover {
     max-height: 300px;
     max-width: 300px;
     margin: auto;
-    border-radius: 20px;
+    border-radius: 20px 0px;
 }
 
 .curso p {
