@@ -98,8 +98,8 @@ header {
 
 #apresentacao img {
     display: block;
-    max-width: 300px;
-    margin: 20px auto;
+    max-width: 250px;
+    margin: auto;
 }
 
 #apresentacao p {
@@ -230,8 +230,8 @@ summary:hover {
     display: block;
     max-height: 300px;
     max-width: 300px;
-    margin: auto;
-    border-radius: 20px 0px;
+    margin: 20px auto;
+    border-radius: 10px;
 }
 
 .curso p {
