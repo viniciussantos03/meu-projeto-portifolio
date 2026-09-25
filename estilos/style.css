@@ -229,6 +229,7 @@ summary:hover {
 .curso img {
     display: block;
     max-height: 300px;
+    max-width: 300px;
     margin: auto;
     border-radius: 20px;
 }
