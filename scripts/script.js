@@ -20,3 +20,13 @@ function verificarTela(e) {
 }
 
 mediaQuery.addEventListener('change', verificarTela) 
+
+// tema 
+
+const body = document.querySelector('body')
+
+const tema = document.querySelector('#tema')
+
+tema.addEventListener('click', () => {
+    body.classList.toggle('dark')
+})
