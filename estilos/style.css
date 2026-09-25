@@ -98,7 +98,7 @@ header {
 
 #apresentacao img {
     display: block;
-    max-width: 250px;
+    max-width: 300px;
     margin: auto;
 }
 
@@ -229,7 +229,7 @@ summary:hover {
 .curso img {
     display: block;
     max-height: 300px;
-    max-width: 300px;
+    max-width: 250px;
     margin: 20px auto;
     border-radius: 10px;
 }
