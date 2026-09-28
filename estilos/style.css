@@ -17,7 +17,7 @@ body.dark {
     --cor-fundo: #000;
     --cor-fundo-1: #0E141A;
     --cor-fundo-2: #0D1218;
-    --cor-hover: #0B0F12;
+    --cor-hover: #24262D;
 }  
 
 :root {
@@ -70,7 +70,7 @@ header {
     margin: auto;
     color: var(--cor-fundo-1);
     width: 55px;
-    padding: 8px;
+    padding: 8px; 
 }
 
 #cabecalho span:hover {
@@ -81,15 +81,27 @@ header {
 }
 
 #cabecalho nav {
-    display: none;
-    margin-top: 5px;
-}
-
-#cabecalho nav.abrir {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     gap: 30px;
+    margin-top: 5px;
+
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    visibility: hidden;
+
+    transition: 
+        max-height 0.4s ease,
+        opacity 0.25s ease,
+        visibility 0.5s ease;
+}
+
+#cabecalho nav.abrir {
+    max-height: 300px;
+    opacity: 1;
+    visibility: visible;
 }
 
 #cabecalho nav a {
