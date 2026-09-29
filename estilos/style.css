@@ -64,16 +64,19 @@ header {
     padding: 30px;
 }
 
-#cabecalho span {
+#cabecalho button {
     display: block;
     text-align: center;
     margin: auto;
     color: var(--cor-fundo-1);
     width: 55px;
     padding: 8px; 
+    padding-right: 56px;
+    border: none;
+    background: none;
 }
 
-#cabecalho span:hover {
+#cabecalho button:hover {
     cursor: pointer;
     border-radius: 10px;
     background-color: var(--cor-hover);
@@ -81,27 +84,15 @@ header {
 }
 
 #cabecalho nav {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    gap: 30px;
+    display: none;
     margin-top: 5px;
-
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    visibility: hidden;
-
-    transition: 
-        max-height 0.4s ease,
-        opacity 0.25s ease,
-        visibility 0.5s ease;
 }
 
 #cabecalho nav.abrir {
-    max-height: 300px;
-    opacity: 1;
-    visibility: visible;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 30px; 
 }
 
 #cabecalho nav a {
@@ -126,6 +117,7 @@ header {
     padding: 10px;
     margin: 20px 10px 0px 10px;
     border-radius: 20px;
+    scroll-margin-top: 115px;
 }
 
 #section-apresentacao h1 {
@@ -312,4 +304,8 @@ footer a {
 
 footer a:hover {
     color: var(--cor-destaque);
+}
+
+html {
+    scroll-behavior: smooth;
 }

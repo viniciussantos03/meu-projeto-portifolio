@@ -29,4 +29,26 @@ const tema = document.querySelector('#tema')
 
 tema.addEventListener('click', () => {
     body.classList.toggle('dark')
+
+    verificarTema()
 })
+
+function verificarTema() {
+    if(body.classList.contains('dark')) {
+        localStorage.setItem('tema', 'dark')
+    } else {
+        localStorage.setItem('tema', 'light')
+    }
+}
+
+function aplicarTema() {
+    const temaSalvo = localStorage.getItem('tema')
+
+    if(temaSalvo === 'dark') {
+        body.classList.add('dark')
+    } else {
+        body.classList.remove('dark')
+    }
+}
+
+aplicarTema()
