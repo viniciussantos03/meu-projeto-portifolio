@@ -1,14 +1,10 @@
-/* Tablet */
+/* Geral */
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) {
     #cabecalho nav {
         display: flex;
         flex-flow: row nowrap;
         justify-content: flex-end;
-    }
-
-    #cabecalho nav.abrir {
-        display: none;
     }
 
     #cabecalho #menu-hamburguinho {
@@ -16,24 +12,10 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-    #cabecalho nav {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-end;
-    }
-
+@media (min-width: 768px) {
     #cabecalho nav a {
         display: block;
         padding: 5px 10px 0px 10px;
-    }
-
-    #cabecalho #menu-hamburguinho {
-        display: none;
-    }
-
-    .projetos img {
-        margin: 0px;
     }
 
     .projetos h3 {
@@ -60,27 +42,15 @@
     }
 }
 
+/* tablet */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .projetos img {
+        margin: 0px;
+    }
+}
+
 @media (min-width: 992px) and (max-width: 1199px) {
-    #cabecalho nav {
-        display: flex;
-        flex-flow: row nowrap;
-        justify-content: flex-end;
-    }
-
-    #cabecalho nav a {
-        display: block;
-        padding: 5px 10px 0px 10px;
-    }
-
-    #cabecalho #menu-hamburguinho {
-        display: none;
-    }
-
-    .projetos h3 {
-        text-align: left;
-        padding-left: 10px;
-    }
-
     .conteudo-projeto {
         display: flex;
     }
@@ -98,26 +68,8 @@
         padding-top: 10px;
     }
 
-    #skills {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
-
-    .skill {
-        margin: 0px 0px;
-    }
-
     .curso-flex {
         display: flex;
-    }
-
-    .curso h3 {
-        text-align: left;
-    }
-
-    .curso img {
-        margin: 0px;
     }
 
     .curso p {
@@ -144,15 +96,6 @@
         justify-content: flex-start;
     }
 
-    #cabecalho nav a {
-        display: block;
-        padding: 5px 10px 0px 10px;
-    }
-
-    #cabecalho #menu-hamburguinho {
-        display: none;
-    }
-
     #section-apresentacao {
         position: sticky;
         max-height: 754px;
@@ -169,13 +112,6 @@
     #section-cursos {
         grid-column: 2 / 4;
         border-radius: 20px;
-    }
-
-
-
-    .projetos h3 {
-        text-align: left;
-        padding-left: 10px;
     }
 
     .conteudo-projeto {
@@ -195,26 +131,8 @@
         padding-top: 10px;
     }
 
-    #skills {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
-
-    .skill {
-        margin: 0px 0px;
-    }
-
     .curso-flex {
         display: flex;
-    }
-
-    .curso h3 {
-        text-align: left;
-    }
-
-    .curso img {
-        margin: 0px;
     }
 
     .curso p {

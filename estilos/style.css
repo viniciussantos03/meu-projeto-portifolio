@@ -130,7 +130,6 @@ header {
 #apresentacao img {
     display: block;
     max-width: 300px;
-    margin: auto;
     margin: 20px auto;
 }
 
@@ -152,7 +151,6 @@ header {
 .conheca-me {
     width: 100%;
     aspect-ratio: 16 / 9;
-    margin: auto;
     margin: 20px auto;
 }
 
@@ -211,7 +209,6 @@ header {
 summary {
     text-align: center;
     cursor: pointer;
-    padding-top: 5px;
     transition: .5s;
     padding: 5px 15px;
     list-style: none;
@@ -269,7 +266,6 @@ summary:hover {
 }
 
 .curso p {
-    margin: auto;
     margin: 20px 0px;
 }
 
