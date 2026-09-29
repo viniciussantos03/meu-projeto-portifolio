@@ -42,15 +42,7 @@
     }
 }
 
-/* tablet */
-
-@media (min-width: 768px) and (max-width: 991px) {
-    .projetos img {
-        margin: 0px;
-    }
-}
-
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) {
     .conteudo-projeto {
         display: flex;
     }
@@ -83,6 +75,15 @@
     }
 }
 
+/* tablet */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .projetos img {
+        margin: 0px;
+    }
+}
+
+/* telas maiores */
 @media (min-width: 1200px) {
     main {
         display: grid;
@@ -112,36 +113,5 @@
     #section-cursos {
         grid-column: 2 / 4;
         border-radius: 20px;
-    }
-
-    .conteudo-projeto {
-        display: flex;
-    }
-
-    .conteudo-projeto img {
-        max-width: 300px;
-    }
-
-    .conteudo-projeto p {
-        padding-left: 20px;
-    }
-
-    .conteudo-projeto details {
-        padding-left: 10px;
-        padding-top: 10px;
-    }
-
-    .curso-flex {
-        display: flex;
-    }
-
-    .curso p {
-        padding-left: 20px;
-        margin: auto 0px;
-    }
-
-    .curso details {
-        display: flex; 
-        align-items: center;
     }
 }
