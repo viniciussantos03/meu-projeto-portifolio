@@ -7,8 +7,16 @@
         justify-content: flex-end;
     }
 
+    #cabecalho nav a {
+    padding: 5px 10px 0px 10px;
+}
+
     #cabecalho #menu-hamburguinho {
         display: none;
+    }
+
+    #tema {
+        padding: 0px;
     }
 }
 
