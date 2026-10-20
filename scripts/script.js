@@ -2,13 +2,18 @@
 
 const hamburguinho = document.querySelector('#menu-hamburguinho')
 const menu = document.querySelector('#menu')
+const hamburguinhoLinks = document.querySelectorAll('#menu a')
 
 hamburguinho.addEventListener('click', () => {
-    clicou(menu)
+    clicou()
 })
 
-function clicou(menu) {
+function clicou() {
     menu.classList.toggle('abrir')
+}
+
+function fecharMenu() {
+    menu.classList.remove('abrir')
 }
 
 const mediaQuery = window.matchMedia('(min-width: 576px)')
@@ -20,6 +25,18 @@ function verificarTela(e) {
 }
 
 mediaQuery.addEventListener('change', verificarTela) 
+
+hamburguinhoLinks.forEach((a)=>  {
+    a.addEventListener('click', () => {
+        fecharMenu()
+    })
+})
+
+hamburguinho.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape') {
+        fecharMenu()
+    }
+})
 
 // tema 
 

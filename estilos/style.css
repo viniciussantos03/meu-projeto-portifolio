@@ -188,6 +188,7 @@ header {
     border: 1px solid var(--cor-secundaria);
     border-radius: 20px;
     transition: .5s;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.288);
 }
 
 .projetos:hover {
@@ -247,6 +248,7 @@ summary:hover {
     border: 1px solid var(--cor-secundaria);
     border-radius: 20px;
     transition: .5s;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.288);
 }
 
 .skill:hover {
