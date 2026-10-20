@@ -62,6 +62,7 @@ header {
 #cabecalho {
     background-color: var(--cor-principal);
     padding: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.288);
 }
 
 #cabecalho #menu-hamburguinho {
@@ -122,6 +123,7 @@ header {
 #section-skills,
 #section-cursos {
     background-color: var(--cor-fundo-2);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.288);
     padding: 10px;
     margin: 20px 10px 0px 10px;
     border-radius: 20px;
@@ -292,6 +294,10 @@ summary:hover {
 
 .curso:hover {
     transform: translateY(-5px);
+}
+
+footer {
+    margin-top: 50px;
 }
 
 footer p {
