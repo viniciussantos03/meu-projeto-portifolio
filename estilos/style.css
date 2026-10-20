@@ -61,7 +61,7 @@ header {
 
 #cabecalho {
     background-color: var(--cor-principal);
-    padding: 30px;
+    padding: 10px;
 }
 
 #cabecalho #menu-hamburguinho {
@@ -282,6 +282,7 @@ summary:hover {
     font-weight: bold;
     color: var(--cor-principal);
     padding: 2px 5px;
+    transition: 0.5s;
 }
 
 .curso a:hover {
@@ -304,6 +305,7 @@ footer a {
     text-decoration: none;
     color: var(--cor-fundo-1);
     font-weight: bold;
+    transition: 0.5s;
 }
 
 footer a:hover {
