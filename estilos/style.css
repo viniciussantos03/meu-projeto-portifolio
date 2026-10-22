@@ -93,28 +93,36 @@ header {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    gap: 30px; 
+    gap: 25px; 
+    margin-bottom: 10px;
 }
 
 #cabecalho nav a {
     text-decoration: none;
     color: var(--cor-destaque);
     font-size: 1.2em;
-    padding: 5px 10px;
+    font-weight: bold;
+    transition: color 0.5s;
 }
 
 #cabecalho nav a:hover {
-    background-color: var(--cor-secundaria);
-    border-radius: 10px;
-    transition: .2s;
+    color: var(--cor-fundo-1);
+    font-weight: bold;
 }
 
 #tema {
+    position: relative;
     color: var(--cor-destaque);
     background: none;
     border: none;
     cursor: pointer;
     padding-bottom: 0;
+    transition: color 0.5s;
+    top: -2px;
+}
+
+#tema:hover {
+    color: var(--cor-fundo-1);
 }
 
 #section-apresentacao, 
@@ -124,10 +132,14 @@ header {
 #section-cursos {
     background-color: var(--cor-fundo-2);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.288);
-    padding: 10px;
+    padding: 20px;
     margin: 20px 10px 0px 10px;
     border-radius: 20px;
     scroll-margin-top: 115px;
+}
+
+#section-conheca {
+    padding: 2px;
 }
 
 #section-apresentacao h1 {
@@ -220,10 +232,10 @@ header {
 summary {
     text-align: center;
     cursor: pointer;
-    transition: .5s;
     padding: 5px 15px;
     list-style: none;
     white-space: nowrap;
+    transition: .5s;
 }
 
 summary:hover {
@@ -249,6 +261,10 @@ summary:hover {
     border-radius: 20px;
     transition: .5s;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.288);
+}
+
+div.subir {
+    margin-top: 20px;
 }
 
 .skill:hover {
