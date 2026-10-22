@@ -4,14 +4,6 @@ const hamburguinho = document.querySelector('#menu-hamburguinho')
 const menu = document.querySelector('#menu')
 const hamburguinhoLinks = document.querySelectorAll('#menu a')
 
-hamburguinho.addEventListener('click', () => {
-    clicou()
-})
-
-function clicou() {
-    menu.classList.toggle('abrir')
-}
-
 function fecharMenu() {
     menu.classList.remove('abrir')
 }
@@ -25,6 +17,10 @@ function verificarTela(e) {
 }
 
 mediaQuery.addEventListener('change', verificarTela) 
+
+hamburguinho.addEventListener('click', () => {
+    menu.classList.toggle('abrir')
+})
 
 hamburguinhoLinks.forEach((a)=>  {
     a.addEventListener('click', () => {
@@ -44,12 +40,6 @@ const body = document.querySelector('body')
 
 const tema = document.querySelector('#tema')
 
-tema.addEventListener('click', () => {
-    body.classList.toggle('dark')
-
-    verificarTema()
-})
-
 function verificarTema() {
     if(body.classList.contains('dark')) {
         localStorage.setItem('tema', 'dark')
@@ -67,5 +57,11 @@ function aplicarTema() {
         body.classList.remove('dark')
     }
 }
+
+tema.addEventListener('click', () => {
+    body.classList.toggle('dark')
+
+    verificarTema()
+})
 
 aplicarTema()
