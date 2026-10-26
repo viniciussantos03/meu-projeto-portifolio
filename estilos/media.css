@@ -34,7 +34,7 @@
     #skills {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 20px;
+        gap: 2.25em;
     }
 
     .skill {
