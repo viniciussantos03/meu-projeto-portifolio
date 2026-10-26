@@ -58,7 +58,8 @@ function aplicarTema() {
     }
 }
 
-tema.addEventListener('click', () => {
+tema.addEventListener('click', (e) => {
+    e.preventDefault()
     body.classList.toggle('dark')
 
     verificarTema()
